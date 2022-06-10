@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sign Up</ion-title>
+    <ion-button slot="Start">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form">
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input [(ngModel)]='name'></ion-input>
+    </ion-item>
+<ion-item>
+  <ion-label position="stacked">Email</ion-label>
+  <ion-input [(ngModel)]='email'></ion-input>
+</ion-item>
+<br>
+<ion-item>
+  <ion-label position="stacked">Password</ion-label>
+  <ion-input type ="password" [(ngModel)]='password'></ion-input>
+</ion-item>
+<ion-button (click) ='signup()' expand="block">Sign Up</ion-button>
+<br>
+<h5 (click)="login()">Do you have an account?<ion-text color='primary'>SignIn here</ion-text></h5>
+  </div>
+
+</ion-content>
+
